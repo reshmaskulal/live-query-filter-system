@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Query Filter System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Live Query Filter System</h1>
+            <p>Search and filter products instantly</p>
+        </header>
+
+        <section class="controls">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <div class="categories">
+                <h3>Categories</h3>
+
+                <label>
+                    <input type="checkbox" value="Electronics" class="category-filter">
+                    Electronics
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Sports" class="category-filter">
+                    Sports
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Fashion" class="category-filter">
+                    Fashion
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Home" class="category-filter">
+                    Home
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Books" class="category-filter">
+                    Books
+                </label>
+            </div>
+
+        </section>
+
+        <div id="loading" class="loading">
+            Loading...
+        </div>
+
+        <div id="results" class="results-grid"></div>
+
+        <div id="noResults" class="no-results">
+            No results found.
+        </div>
+
+        <div class="pagination">
+            <button id="previousBtn">Previous</button>
+
+            <span id="pageInfo">Page 1</span>
+
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
