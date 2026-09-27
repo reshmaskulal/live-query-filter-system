@@ -1,0 +1,13 @@
+
+{
+  "name": "live-query-filter-system",
+  "version": "1.0.0",
+  "description": "Live Query Filter System with debounced search, category filtering and pagination",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
